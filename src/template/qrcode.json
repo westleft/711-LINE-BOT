@@ -1,0 +1,99 @@
+{
+    "type": "bubble",
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "spacing": "md",
+      "contents": [
+        {
+          "type": "box",
+          "layout": "vertical",
+          "margin": "lg",
+          "spacing": "sm",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "baseline",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "收件人",
+                  "color": "#aaaaaa",
+                  "size": "lg",
+                  "flex": 2
+                },
+                {
+                  "type": "text",
+                  "text": "拱袖珍",
+                  "wrap": true,
+                  "size": "lg",
+                  "color": "#666666",
+                  "flex": 4
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "baseline",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "電話",
+                  "color": "#aaaaaa",
+                  "size": "lg",
+                  "flex": 2
+                },
+                {
+                  "type": "text",
+                  "text": "0912555555",
+                  "wrap": true,
+                  "color": "#666666",
+                  "size": "lg",
+                  "flex": 4
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "baseline",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "門市",
+                  "color": "#aaaaaa",
+                  "size": "lg",
+                  "flex": 2
+                },
+                {
+                  "type": "text",
+                  "text": "窗簾門市",
+                  "wrap": true,
+                  "color": "#666666",
+                  "size": "lg",
+                  "flex": 4
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "box",
+          "layout": "vertical",
+          "margin": "xs",
+          "contents": [
+            {
+              "type": "image",
+              "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/linecorp_code_withborder.png",
+              "aspectMode": "cover",
+              "size": "full",
+              "margin": "md"
+            }
+          ],
+          "paddingTop": "12px"
+        }
+      ]
+    }
+  }
