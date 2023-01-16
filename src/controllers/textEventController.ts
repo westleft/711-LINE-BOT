@@ -2,7 +2,7 @@
 import { WebhookEvent, TextMessage, MessageAPIResponseBase, FlexMessage } from '@line/bot-sdk';
 const client = require("../config").client;
 
-import { flexMessageData } from "../template/flexMessages/reciver";
+import { flexMessageData } from "../template/flexMessages/receiver";
 
 export const textEventHandler = async (
   event: WebhookEvent
@@ -17,19 +17,14 @@ export const textEventHandler = async (
   const { replyToken } = event;
   const { text } = event.message;
 
-  // if (text !== "我要寄件") return;
+  if (text !== "我要寄件") return;
 
-  try {
+  const response: FlexMessage = {
+    type: "flex", 
+    altText: "請選擇收件人",
+    contents: flexMessageData
+  };
 
-    const response: FlexMessage = {
-      type: "flex", 
-      altText: "string",
-      contents: flexMessageData
-    };
-  
-    // Reply to the user.
-    await client.replyMessage(replyToken, response);
-  } catch(e){
-    console.log(e)
-  }
+  // Reply to the user.
+  await client.replyMessage(replyToken, response);
 };
