@@ -4,6 +4,7 @@ import { hiddenPhoneNumber, deepCopy } from "../../tools/";
 
 const mainTemplate = {
   "type": "bubble",
+  "size": "giga",
   "body": {
     "type": "box",
     "layout": "vertical",
@@ -33,7 +34,7 @@ const mainTemplate = {
             "type": "image",
             "url": "",
             "aspectMode": "cover",
-            "size": "4xl",
+            "size": "full",
             "margin": "md"
           },
           {
